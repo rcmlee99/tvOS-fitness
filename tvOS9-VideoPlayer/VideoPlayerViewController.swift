@@ -5,8 +5,9 @@ import AVKit
 
 class VideoPlayerViewController: AVPlayerViewController {
     
-    @IBOutlet weak var countLabel: UILabel!
-    // MARK: - Properties
+    
+    var parentController : ViewController?
+        // MARK: - Properties
     let overlay = UIView(frame: CGRectMake(100, 100, 285, 225))
 //    let watermark = "Nasa-Watermark"
     var url = "http://files.parsetfss.com/5f5f39a3-98d7-4067-b845-5eb0e5254eb4/tfss-9d4ad362-bdbd-4b0f-b64c-b7b175e3b56d-jumpingjacks.mp4"
@@ -14,7 +15,9 @@ class VideoPlayerViewController: AVPlayerViewController {
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         setVideoPlayer()
+        self.showsPlaybackControls = false
         let tapRecognizer = UITapGestureRecognizer(target: self, action:"pressed")
 //        tapRecognizer.allowedPressTypes = [NSNumber(integer: UIPressType.PlayPause.rawValue)];
         self.view.addGestureRecognizer(tapRecognizer)
@@ -25,6 +28,7 @@ class VideoPlayerViewController: AVPlayerViewController {
     }
     var count = 0 {
         didSet{
+            parentController?.workOutCOuntLabel.text = count.description
         }
     }
     func pressed() {

@@ -63,7 +63,7 @@
         <!--View Controller-->
         <scene sceneID="Jgi-14-UJ3">
             <objects>
-                <viewController id="3Ey-ZI-0dg" sceneMemberID="viewController">
+                <viewController id="3Ey-ZI-0dg" customClass="ViewController" customModule="tvOS9_VideoPlayer" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="s3O-W6-VVO"/>
                         <viewControllerLayoutGuide type="bottom" id="uah-Gf-n7y"/>
@@ -79,13 +79,13 @@
                                     <segue destination="iO7-RC-JHF" kind="embed" id="MRf-sE-thJ"/>
                                 </connections>
                             </containerView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oMZ-kT-R8G">
-                                <rect key="frame" x="1742" y="928" width="80" height="80"/>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.61799999999999999" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oMZ-kT-R8G">
+                                <rect key="frame" x="1642" y="828" width="180" height="180"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="80" id="LEi-rJ-E9h"/>
-                                    <constraint firstAttribute="height" constant="80" id="ZkL-wg-7dn"/>
+                                    <constraint firstAttribute="width" constant="180" id="LEi-rJ-E9h"/>
+                                    <constraint firstAttribute="height" constant="180" id="ZkL-wg-7dn"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="60"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -102,6 +102,9 @@
                             <constraint firstItem="ff9-8q-58v" firstAttribute="centerY" secondItem="PVR-nA-mKF" secondAttribute="centerY" id="uth-Kh-2Vx"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="workOutCOuntLabel" destination="oMZ-kT-R8G" id="zcI-AE-md4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cmy-K6-2gS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
