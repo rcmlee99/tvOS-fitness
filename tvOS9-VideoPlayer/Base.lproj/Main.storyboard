@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="9046" systemVersion="15A279b" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" initialViewController="7hI-cy-FQN">
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="9046" systemVersion="14F27" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" initialViewController="7hI-cy-FQN">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9035"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -17,48 +17,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tvOS - Video Player" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2JO-KD-GgN">
-                                <rect key="frame" x="509" y="383" width="902" height="174"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="902" id="vGz-52-M4S"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="106"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cAe-eo-hsv">
-                                <rect key="frame" x="694" y="610" width="532" height="86"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="86" id="Qrb-Qh-Zqb"/>
-                                    <constraint firstAttribute="width" constant="532" id="xLt-UT-WaO"/>
-                                </constraints>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LQ9-QX-Qim">
+                                <rect key="frame" x="87" y="70" width="800" height="400"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
-                                <state key="normal" title="Play NASA Movie!"/>
+                                <state key="normal" title="Button" image="1.jpg"/>
                                 <connections>
-                                    <action selector="playVideo:" destination="7hI-cy-FQN" eventType="primaryActionTriggered" id="YpQ-fq-sZP"/>
+                                    <segue destination="3Ey-ZI-0dg" kind="show" id="f0f-OV-o9A"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TXG-Gx-PzW">
+                                <rect key="frame" x="1038" y="578" width="800" height="400"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Button" image="4.jpg"/>
+                                <connections>
+                                    <segue destination="3Ey-ZI-0dg" kind="show" id="QCh-23-SyW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O3m-a4-6w8">
+                                <rect key="frame" x="1038" y="70" width="800" height="400"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Button" image="2.jpg"/>
+                                <connections>
+                                    <segue destination="3Ey-ZI-0dg" kind="show" id="dpj-tK-18I"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uxT-1d-vRc">
+                                <rect key="frame" x="87" y="578" width="800" height="400"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Button" image="3.jpg"/>
+                                <connections>
+                                    <segue destination="3Ey-ZI-0dg" kind="show" id="zxm-Qg-ad1"/>
                                 </connections>
                             </button>
                         </subviews>
                         <animations/>
-                        <constraints>
-                            <constraint firstItem="2JO-KD-GgN" firstAttribute="top" secondItem="s1N-9k-wJF" secondAttribute="bottom" constant="383" id="1e8-xF-BjN"/>
-                            <constraint firstItem="cAe-eo-hsv" firstAttribute="centerX" secondItem="2JO-KD-GgN" secondAttribute="centerX" id="4k1-ig-zch"/>
-                            <constraint firstItem="cAe-eo-hsv" firstAttribute="top" secondItem="2JO-KD-GgN" secondAttribute="bottom" constant="53" id="5MG-Oa-Sbm"/>
-                            <constraint firstItem="cAe-eo-hsv" firstAttribute="centerX" secondItem="doI-ys-BzL" secondAttribute="centerX" id="Mgv-Cd-iHH"/>
-                            <constraint firstItem="knJ-NW-wgz" firstAttribute="top" secondItem="cAe-eo-hsv" secondAttribute="bottom" constant="384" id="UbR-wG-ntD"/>
-                        </constraints>
                     </view>
-                    <connections>
-                        <outlet property="headLabel" destination="2JO-KD-GgN" id="QXA-Se-KL5"/>
-                        <outlet property="playButton" destination="cAe-eo-hsv" id="iAg-nS-wsb"/>
-                        <segue destination="3Ey-ZI-0dg" kind="show" identifier="ShowAVPlayer" id="ahS-Fb-Rqk"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XhH-Da-m3o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-620" y="212"/>
+            <point key="canvasLocation" x="-620" y="148"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Jgi-14-UJ3">
@@ -130,4 +127,13 @@
             <point key="canvasLocation" x="-596" y="2890"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="1.jpg" width="1125" height="600"/>
+        <image name="2.jpg" width="1125" height="600"/>
+        <image name="3.jpg" width="1125" height="600"/>
+        <image name="4.jpg" width="1125" height="600"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="f0f-OV-o9A"/>
+    </inferredMetricsTieBreakers>
 </document>
