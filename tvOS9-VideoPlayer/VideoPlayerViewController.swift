@@ -84,6 +84,7 @@ extension VideoPlayer {
         // Just Play!
         player?.play()
         timerCount = 0
+        count = 0
 
     }
 }
