@@ -17,9 +17,20 @@
 		AAE452021BAE9CE4007C701E /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AAE451FE1BAE9CE4007C701E /* 2.jpg */; };
 		AAE452031BAE9CE4007C701E /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AAE451FF1BAE9CE4007C701E /* 3.jpg */; };
 		AAE452041BAE9CE4007C701E /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AAE452001BAE9CE4007C701E /* 4.jpg */; };
+		AAE4520C1BAEB601007C701E /* tvOS9_VideoPlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE4520B1BAEB601007C701E /* tvOS9_VideoPlayerTests.swift */; };
 		AAF617CF1BAE888900C19325 /* wallsit.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AAF617CD1BAE888900C19325 /* wallsit.mp4 */; };
 		AAF617D01BAE888900C19325 /* pushup.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AAF617CE1BAE888900C19325 /* pushup.mp4 */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AAE4520E1BAEB601007C701E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7EC5D5241BA4A2C300EFC496 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7EC5D52B1BA4A2C300EFC496;
+			remoteInfo = "tvOS9-VideoPlayer";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		5B0E771C1BAE85F100A1EA68 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -34,6 +45,9 @@
 		AAE451FE1BAE9CE4007C701E /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
 		AAE451FF1BAE9CE4007C701E /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
 		AAE452001BAE9CE4007C701E /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
+		AAE452091BAEB601007C701E /* tvOS9-VideoPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tvOS9-VideoPlayerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAE4520B1BAEB601007C701E /* tvOS9_VideoPlayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tvOS9_VideoPlayerTests.swift; sourceTree = "<group>"; };
+		AAE4520D1BAEB601007C701E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AAF617CC1BAE880800C19325 /* jumpingjack_dolby.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = jumpingjack_dolby.mp4; sourceTree = "<group>"; };
 		AAF617CD1BAE888900C19325 /* wallsit.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = wallsit.mp4; sourceTree = "<group>"; };
 		AAF617CE1BAE888900C19325 /* pushup.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = pushup.mp4; sourceTree = "<group>"; };
@@ -47,6 +61,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AAE452061BAEB601007C701E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -54,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				7EC5D52E1BA4A2C300EFC496 /* tvOS9-VideoPlayer */,
+				AAE4520A1BAEB601007C701E /* tvOS9-VideoPlayerTests */,
 				7EC5D52D1BA4A2C300EFC496 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -62,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				7EC5D52C1BA4A2C300EFC496 /* tvOS9-VideoPlayer.app */,
+				AAE452091BAEB601007C701E /* tvOS9-VideoPlayerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -119,6 +142,15 @@
 			name = Ressources;
 			sourceTree = "<group>";
 		};
+		AAE4520A1BAEB601007C701E /* tvOS9-VideoPlayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				AAE4520B1BAEB601007C701E /* tvOS9_VideoPlayerTests.swift */,
+				AAE4520D1BAEB601007C701E /* Info.plist */,
+			);
+			path = "tvOS9-VideoPlayerTests";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,6 +171,24 @@
 			productReference = 7EC5D52C1BA4A2C300EFC496 /* tvOS9-VideoPlayer.app */;
 			productType = "com.apple.product-type.application";
 		};
+		AAE452081BAEB601007C701E /* tvOS9-VideoPlayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAE452101BAEB601007C701E /* Build configuration list for PBXNativeTarget "tvOS9-VideoPlayerTests" */;
+			buildPhases = (
+				AAE452051BAEB601007C701E /* Sources */,
+				AAE452061BAEB601007C701E /* Frameworks */,
+				AAE452071BAEB601007C701E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AAE4520F1BAEB601007C701E /* PBXTargetDependency */,
+			);
+			name = "tvOS9-VideoPlayerTests";
+			productName = "tvOS9-VideoPlayerTests";
+			productReference = AAE452091BAEB601007C701E /* tvOS9-VideoPlayerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -151,6 +201,11 @@
 				TargetAttributes = {
 					7EC5D52B1BA4A2C300EFC496 = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = 96XG5CYU7R;
+					};
+					AAE452081BAEB601007C701E = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 7EC5D52B1BA4A2C300EFC496;
 					};
 				};
 			};
@@ -168,6 +223,7 @@
 			projectRoot = "";
 			targets = (
 				7EC5D52B1BA4A2C300EFC496 /* tvOS9-VideoPlayer */,
+				AAE452081BAEB601007C701E /* tvOS9-VideoPlayerTests */,
 			);
 		};
 /* End PBXProject section */
@@ -188,6 +244,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AAE452071BAEB601007C701E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -202,7 +265,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AAE452051BAEB601007C701E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAE4520C1BAEB601007C701E /* tvOS9_VideoPlayerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AAE4520F1BAEB601007C701E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7EC5D52B1BA4A2C300EFC496 /* tvOS9-VideoPlayer */;
+			targetProxy = AAE4520E1BAEB601007C701E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		7EC5D5331BA4A2C300EFC496 /* Main.storyboard */ = {
@@ -302,10 +381,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "tvOS9-VideoPlayer/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sweefties.tvOS9-VideoPlayer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -314,10 +396,37 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "tvOS9-VideoPlayer/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sweefties.tvOS9-VideoPlayer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		AAE452111BAEB601007C701E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "tvOS9-VideoPlayerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ethanfan.tvOS9-VideoPlayerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tvOS9-VideoPlayer.app/tvOS9-VideoPlayer";
+			};
+			name = Debug;
+		};
+		AAE452121BAEB601007C701E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "tvOS9-VideoPlayerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ethanfan.tvOS9-VideoPlayerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tvOS9-VideoPlayer.app/tvOS9-VideoPlayer";
 			};
 			name = Release;
 		};
@@ -341,6 +450,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		AAE452101BAEB601007C701E /* Build configuration list for PBXNativeTarget "tvOS9-VideoPlayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAE452111BAEB601007C701E /* Debug */,
+				AAE452121BAEB601007C701E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
