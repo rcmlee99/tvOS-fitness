@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet weak var workOutCOuntLabel: UILabel!{
         didSet{
             workOutCOuntLabel.layer.cornerRadius = workOutCOuntLabel.frame.height / 2

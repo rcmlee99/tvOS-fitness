@@ -91,6 +91,14 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ScQ-9d-khi">
+                                <rect key="frame" x="1710.5" y="20" width="111.5" height="63.5"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="53"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <constraints>
@@ -98,11 +106,14 @@
                             <constraint firstItem="ff9-8q-58v" firstAttribute="centerX" secondItem="PVR-nA-mKF" secondAttribute="centerX" id="P4z-d7-Fae"/>
                             <constraint firstItem="ff9-8q-58v" firstAttribute="height" secondItem="PVR-nA-mKF" secondAttribute="height" id="Vht-na-2r4"/>
                             <constraint firstAttribute="trailingMargin" secondItem="oMZ-kT-R8G" secondAttribute="trailing" constant="78" id="onL-65-2YB"/>
+                            <constraint firstItem="ScQ-9d-khi" firstAttribute="trailing" secondItem="oMZ-kT-R8G" secondAttribute="trailing" id="que-UL-C5H"/>
                             <constraint firstItem="uah-Gf-n7y" firstAttribute="top" secondItem="oMZ-kT-R8G" secondAttribute="bottom" constant="72" id="tss-CP-Xe0"/>
                             <constraint firstItem="ff9-8q-58v" firstAttribute="centerY" secondItem="PVR-nA-mKF" secondAttribute="centerY" id="uth-Kh-2Vx"/>
+                            <constraint firstItem="ScQ-9d-khi" firstAttribute="top" secondItem="PVR-nA-mKF" secondAttribute="top" constant="20" symbolic="YES" id="vf7-KD-dvz"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="timerLabel" destination="ScQ-9d-khi" id="yzz-zD-dlz"/>
                         <outlet property="workOutCOuntLabel" destination="oMZ-kT-R8G" id="zcI-AE-md4"/>
                     </connections>
                 </viewController>
