@@ -15,6 +15,10 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        var path = NSBundle.mainBundle().pathForResource("wallsit", ofType: "mp4")
+        let url = NSURL(fileURLWithPath: path!)
+        
+        print("test")
 
     }
     
