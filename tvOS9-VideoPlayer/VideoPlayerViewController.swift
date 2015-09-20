@@ -13,7 +13,7 @@ class VideoPlayerViewController: AVPlayerViewController {
 //    var url = "http://files.parsetfss.com/5f5f39a3-98d7-4067-b845-5eb0e5254eb4/tfss-9d4ad362-bdbd-4b0f-b64c-b7b175e3b56d-jumpingjacks.mp4"
     var url : NSURL?
     
-    let pathArray = ["wallsit","pushup","jumpingjack_dolby"]
+    let pathArray = ["dolby","wallsit","pushup"]
     var pathCount = 0 {
         didSet{
             let path = NSBundle.mainBundle().pathForResource(pathArray[pathCount], ofType: "mp4")
@@ -24,8 +24,8 @@ class VideoPlayerViewController: AVPlayerViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let path = NSBundle.mainBundle().pathForResource(pathArray[pathCount], ofType: "mp4")
-        url = NSURL(fileURLWithPath: path!)
+        let path = "http://files.parsetfss.com/8b16bbd3-b340-4890-96c7-25813e05eddd/tfss-b6723f7b-2614-431a-95fb-ad82efa0abcf-jumpingjack_dolby.mp4"
+        url = NSURL(string: path)
         
         
         setVideoPlayer()
@@ -53,7 +53,7 @@ class VideoPlayerViewController: AVPlayerViewController {
         pathCount = (pathCount+1)%3
 
         setVideoPlayer()
-        print("test")
+        print("swiped")
     }
     
     var timerCount = 0 {
@@ -64,6 +64,10 @@ class VideoPlayerViewController: AVPlayerViewController {
     
     func tick() {
         timerCount++
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        player?.pause()
     }
 }
 

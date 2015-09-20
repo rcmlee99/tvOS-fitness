@@ -48,7 +48,7 @@
 		AAE452091BAEB601007C701E /* tvOS9-VideoPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tvOS9-VideoPlayerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAE4520B1BAEB601007C701E /* tvOS9_VideoPlayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tvOS9_VideoPlayerTests.swift; sourceTree = "<group>"; };
 		AAE4520D1BAEB601007C701E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AAF617CC1BAE880800C19325 /* jumpingjack_dolby.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = jumpingjack_dolby.mp4; sourceTree = "<group>"; };
+		AAF617CC1BAE880800C19325 /* dolby.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = dolby.mp4; sourceTree = "<group>"; };
 		AAF617CD1BAE888900C19325 /* wallsit.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = wallsit.mp4; sourceTree = "<group>"; };
 		AAF617CE1BAE888900C19325 /* pushup.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = pushup.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -134,7 +134,7 @@
 				AAE452001BAE9CE4007C701E /* 4.jpg */,
 				AAF617CD1BAE888900C19325 /* wallsit.mp4 */,
 				AAF617CE1BAE888900C19325 /* pushup.mp4 */,
-				AAF617CC1BAE880800C19325 /* jumpingjack_dolby.mp4 */,
+				AAF617CC1BAE880800C19325 /* dolby.mp4 */,
 				7EC5D5331BA4A2C300EFC496 /* Main.storyboard */,
 				7EC5D5361BA4A2C300EFC496 /* Assets.xcassets */,
 				7EC5D5381BA4A2C300EFC496 /* Info.plist */,
@@ -458,6 +458,7 @@
 				AAE452121BAEB601007C701E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
