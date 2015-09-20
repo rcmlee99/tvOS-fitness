@@ -58,7 +58,7 @@ class VideoPlayerViewController: AVPlayerViewController {
     
     var timerCount = 0 {
         didSet{
-            parentController?.timerLabel.text = "\(timerCount/60):\(timerCount%60)"
+            parentController?.timerLabel.text = " \(timerCount/60):\(timerCount%60) "
         }
     }
     
